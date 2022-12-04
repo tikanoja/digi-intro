@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+
+body{
+  background-color: rgb(190, 180, 155);
+}
+
+.wrap{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(187,224,244,0.5), rgba(219,199,170,0.8)), url(sleepingdog.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(108, 98, 84, 0.4);
+}
+
+nav img{
+  width: 200px;
+}
+
+.navbar{
+  flex: 1;
+  text-align: right;
+}
+
+.navbar ul li{
+  display: inline-block;
+  padding: 16px 30px;
+  position: relative;
+}
+
+.navbar a {
+  color: white;
+  font-weight: normal; 
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: black;
+  color: #FA9F42;
+}
+
+.navbar a.current {
+  color: white;
+  font-size: 22px;
+  text-decoration: underline;
+  text-decoration-color: #FA9F42;
+}
+
+.intro-text{
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+  /*                     GRID                         */
+  
+  .wrapgrid{
+    text-align: center;
+    position: absolute;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 10px;
+    width: auto;
+    height: auto;
+    background-color: rgba(219,199,170,0.8);
+  }
+  
+  .grid1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .grid2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .grid3 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .grid4 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .grid5 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .grid6 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+@media(max-width: 790px){
+  .navbar ul li{
+    display: inline-block;
+    font-size: 10px;
+    height: 0px;
+  }
+
+  .grid {
+    display: block;
+  }
+
+ 
+  
+  nav img{
+    width: 110px;
+  }
+}
+@media(max-width: 500px){
+.intro-text{
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  margin-top: 500px;
+}
+
+}
